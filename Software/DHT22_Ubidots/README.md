@@ -20,8 +20,10 @@
  Navigate to Tools > Board > Boards Manager..., type the keyword esp32 in the search box, select the latest version of esp32, and install it.
 
  # <span style="color:red;">Important!!</span>
-- The on-board package for XIAO ESP32S3 requires at least version 2.0.8 to be available, but in this example its on 2.0.10, because 3.0.4 its not working properly in this case.
-- In the code Edit: 
+- The on-board package for XIAO ESP32S3 requires at least version 2.0.8 to be available, but for this example it shoud be up to 2.0.17, because from 3.0.0 its not working properly in this case.
+
+  
+- Also in the code Edit: 
 ```
 const char* ubidotsToken = "PUT YOUR TOKEN HERE"; // Replace with your Ubidots Token
 const char* deviceLabel = "YOUR DEVICE LABEL"; // Device label
