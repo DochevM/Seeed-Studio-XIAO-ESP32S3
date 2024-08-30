@@ -19,7 +19,7 @@
 
  Navigate to Tools > Board > Boards Manager..., type the keyword esp32 in the search box, select the latest version of esp32, and install it.
 
- ### Important!!
+ # <span style="color:red;">Important!!</span>
 - The on-board package for XIAO ESP32S3 requires at least version 2.0.8 to be available, but in this example its on 2.0.10, because 3.0.4 its not working properly in this code.
 - In the code Edit: 
 ```
