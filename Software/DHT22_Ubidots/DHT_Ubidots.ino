@@ -7,8 +7,8 @@ const char* ssid = "Comet_2Ghz_Guest";
 const char* password = "expl0r3r";
 
 // Ubidots parameters
-const char* ubidotsToken = "BBUS-tT890bQj0HdEIOF7jsbqOZCS48uQDQ"; // Replace with your Ubidots Token
-const char* deviceLabel = "XIAO-ESP32s3"; // Device label
+const char* ubidotsToken = "PUT YOUR TOKEN HERE"; // Replace with your Ubidots Token
+const char* deviceLabel = "YOUR DEVICE LABEL"; // Device label
 const char* temperatureVariable = "temperature"; // Temperature variable label
 const char* humidityVariable = "humidity"; // Humidity variable label
 
@@ -52,6 +52,8 @@ void loop() {
   if(WiFi.status() == WL_CONNECTED){
     HTTPClient http;
     String serverPath = "http://things.ubidots.com/api/v1.6/devices/" + String(deviceLabel);
+//if you are a industrial user use: http://industrial.api.ubidots.com/api/v1.6/devices/
+
 
     // Prepare the payload in JSON format
     String payload = "{\"" + String(temperatureVariable) + "\": " + String(temperature) + ", ";
