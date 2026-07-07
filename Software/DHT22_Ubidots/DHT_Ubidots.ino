@@ -3,8 +3,8 @@
 #include "DHT.h"
 
 // Replace with your network credentials
-const char* ssid = "Comet_2Ghz_Guest";
-const char* password = "expl0r3r";
+const char* ssid = "PUT YOUR WIFI SSID HERE";
+const char* password = "PUT YOUR WIFI PASSWORD HERE";
 
 // Ubidots parameters
 const char* ubidotsToken = "PUT YOUR TOKEN HERE"; // Replace with your Ubidots Token
